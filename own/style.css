@@ -1,0 +1,63 @@
+body {
+  background: #212121;
+  color: white;
+}
+
+#link {
+  background: none;
+}
+
+#centerTitle {
+  text-align: center;
+  width: 2500px;
+}
+
+#titleMeta {
+  font-size: 200px;
+}
+
+#userTitle {
+  text-align:center;
+  font-size: 60px;
+}
+
+.impress-enabled div#impress-toolbar {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0.6;
+
+}
+.impress-enabled div#impress-toolbar > span {
+    margin-right: 10px;
+}
+
+.zexyButt {
+  width: 50%;
+  margin: auto;
+}
+
+.btn1, .btn2 {
+  cursor: pointer;
+  margin: 40px;
+  border-radius: 3px;
+  height: 55px;
+  width: 175px;
+  border:none;
+  color: white;
+  background-color: #2196f3;
+  font-size: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  &:active {
+      box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                  0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                  0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  }
+}
+
+#references {
+  margin: auto;
+}

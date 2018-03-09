@@ -1,0 +1,288 @@
+body {
+    background: #222;
+    font-family: 'Lato', sans-serif;
+    color: white;
+	margin: 0px;
+	padding: 0 ;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+footer {
+	font-size: 12px;
+	padding-top: 16px;
+	text-align: center;
+}
+
+footer a,
+footer a:visited {
+	color: #702424;
+}
+
+.bigger {
+	font-size: 28px;
+}
+
+.big {
+	font-size: 22px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+#header {
+  text-align: center;
+  background: transparent;
+  color: #f7f7f7;
+  font-size: 35px;
+}
+
+#sepLine {
+  border: 0;
+  height: 1.65px;
+  width: 85%;
+  background-image: -webkit-linear-gradient(left, transparent, #f7f7f7, transparent);
+  background-image: -moz-linear-gradient(left, transparent, #f7f7f7, transparent);
+  background-image: -ms-linear-gradient(left, transparent, #f7f7f7, transparent);
+  background-image: -o-linear-gradient(left, transparent, #f7f7f7, transparent);
+  background-image: linear-gradient(left, transparent, #f7f7f7, transparent);
+}
+
+#poster {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr [last];
+}
+
+#stats {
+  color: #f7f7f7;
+  font-size: 28px;
+  text-align: center;
+}
+
+.box {
+	color: #246563;
+	color: #FFF;
+}
+
+.box1 {
+	padding-top: 2rem;
+}
+
+#map-box {
+	text-align: center;
+}
+
+.header {
+    text-align: center;
+    grid-column: 1/ last;
+}
+
+.regular h2,
+.regular h3 {
+	text-align: center;
+}
+
+.regular {
+    grid-column: 1/ last;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column p {
+	padding: 2em 4em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.three_col {
+  padding-top: 15px;
+  float: left;
+  width: 16.6666%;
+}
+
+.numberText {
+  margin-top: -10px;
+  color: #ed4141;
+  font-size: 50px;
+}
+
+
+.gradient {
+	max-width: 65%;
+	margin: 0 auto;
+
+
+}
+.swatches {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc), to(#800026));
+  background: linear-gradient(to right, #ffc, #800026);
+  height: 16px;
+  margin: 0 10px;
+}
+.labels {
+  position: relative;
+}
+.label {
+  max-width: 32%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.label.min,
+.label.max {
+  position: absolute;
+  top: 0;
+  min-width: 20px;
+}
+.label.min {
+  left: 0;
+}
+.label.median {
+  margin: 0 auto;
+}
+.label.max {
+  right: 0;
+}
+.label::after {
+  display: block;
+  text-align: left;
+  content: '|';
+}
+.label.min::after {
+  margin-left: 10px;
+}
+.label.median::after {
+  text-align: center;
+}
+.label.max::after {
+  text-align: right;
+  margin-right: 10px;
+}
+
+#theftsContainer {
+	margin-bottom: 20px;
+}
+
+.dimple-custom-axis-line {
+	stroke: #f7f7f7 !important;
+}
+
+.dimple-custom-axis-label,
+.dimple-custom-axis-title,
+.dimple-legend-text {
+	fill: #f7f7f7 !important;
+	font-size: 12px !important;
+	font-family: Lato, sans-serif;
+}
+
+.dimple-custom-gridline {
+	stroke: #444 !important;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.center-text {
+	text-align: center;
+}
+
+/*State css */
+
+	.state{
+		fill: none;
+		/* stroke: #a9a9a9; */
+		stroke: #222;
+		stroke-width: 1;
+	}
+	.state:hover{
+		fill-opacity:0.5;
+	}
+	#tooltip h4{
+		margin:0;
+		font-size:35px;
+	}
+	.tooltip {
+		position: absolute;
+		text-align: center;
+		padding: 20px;
+		margin: 10px;
+		pointer-events: none;
+		background:rgba(0,0,0,0.9);
+		border:1px solid grey;
+		border-radius:5px;
+		font-size:18px;
+		width: 250px;
+		padding:4px;
+		color:white;
+		opacity:0;
+    z-index: 100;
+	}
+	#tooltip table{
+		table-layout:fixed;
+	}
+	#tooltip tr td{
+		padding:3px;
+		margin:0;
+		color: white;
+	}
+	#tooltip tr td:nth-child(1){
+		width:400px;
+    text-align:center;
+	}
+	#tooltip tr td:nth-child(2){
+		text-align:center;
+	}
+
+	#statesContainer {
+		display: flex;
+		justify-content: center;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	/* end of state css */
+
+/* Venn diagram */
+
+#venn path {
+	fill-opacity: 0.25;
+	fill: rgb(31, 119, 180);
+	stroke-opacity: 0;
+	stroke: rgb(255, 255, 255);
+	stroke-width: 3px;
+}
+
+.venntooltip {
+	background: #333;
+	border: 0px;
+	border-radius: 8px;
+	color: #ddd;
+	font-size: 14px;
+	height: 16px;
+	opacity: 0;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	width: 128px;
+}
+
+/* End Venn diagram */
