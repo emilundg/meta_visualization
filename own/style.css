@@ -86,16 +86,30 @@ body {
   border-color: rgba(41, 129, 194, 0.92);
 }
 
-.annotation:before {
-  /* margin-left: 85px;
-  content: "";
+.annotation1 {
+  position: relative;
+  display: inline-block;
+}
+
+.annotation1 .annotationtext1 {
+
+  font-family: 'Lato', sans-serif;
+  width: 220px;
+  font-size: 18px;
+  background-color: rgba(38, 38, 38, 0.98);
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
   position: absolute;
-  width: 0;
-	height: 0;
-  -webkit-transform:
-      translateY(-20px)
-      translateX(5px)
-      rotate(27deg);
-	border-top: 20px solid black;
-	border-left: 100px solid transparent; */
+  z-index: 1;
+  margin-left: 140px;
+  -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(41, 129, 194, 0.92);
 }
