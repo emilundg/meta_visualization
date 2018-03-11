@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=1024" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Breaches</title>
   <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
   <link href="css/impress-demo.css" rel="stylesheet" />
@@ -22,26 +22,40 @@
 
   <div id="impress">
 
-
     <div id="overview" class="step" data-x="0" data-y="-7000" data-scale="6">
     </div>
-
 
     <div id="centerTitle" class="step" data-x="3000" data-y="-2000" data-z="-1000" data-scale="10">
       <p> Data Security Breaches In US Health Care <br></p>
       <h1>2009-2013</h1>
+
+      <button onclick="showAnnotations()">Show annotations</button>
+      <button onclick="hideAnnotations()">Hide annotations</button>
+      <button onclick="highlightBox()">Highlight next box</button>
+      <button onclick="unhighlightBox()">Unhilight all boxes</button>
     </div>
 
     <div id="glyphs" class="step" data-x="3000" data-y="600" data-z="-1000" data-scale="4" style="width: 1250px;">
+
+      <div class="annotation">
+        <span class="annotationtext"><h1>User story/Scenario</h1> <br /> A lot of different text blablalblalballlalblblablla</span>
+      </div>
+
       <div id="stats" class="box regular" style="opacity: 0;">
+
         <p class="big" style="padding: 0 5rem;">
           The health care sector works with a lot of sensitive and private data such as social security numbers, addresses, medical diagnoses etc.
         </p>
+
         <p class="bigger">
           A total of
           <span class="numberText" id="totalnr">0</span> security breaches reported.
         </p>
         <div class="three_col">
+          <div class="annotation">
+            <span class="annotationtext"><h1>User story/Scenario</h1> <br /> A lot of different text blablalblalballlalblblablla</span>
+          </div>
+
           <img src="images/theftwhite.svg" width="150px">
           <p>Thefts</p>
           <p class="numberText" id="thefts">
@@ -264,7 +278,6 @@
   <script>
     impress().init();
   </script>
-
 </body>
 
 </html>

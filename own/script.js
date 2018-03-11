@@ -27,3 +27,28 @@ $(function() {
     });
   });
 });
+
+function showAnnotations()
+{
+  d3.selectAll(".annotation").style("display", "block");
+}
+
+function hideAnnotations()
+{
+  d3.selectAll(".annotation").style("display", "none");
+}
+
+var nextBoxToHilight = 1;
+function highlightBox()
+{
+  // d3.selectAll("#impress").transition().style("border","solid red 3px");
+  var glyphs = document.getElementById("glyphs").style.border = "solid red 3px";
+  // insert fadeIn of div thats places correctly
+
+}
+
+function unhighlightBox()
+{
+  d3.selectAll(".step").transition().style("border",null);
+  nextBoxToHilight = 1;
+}
